@@ -1,0 +1,36 @@
+GET http://localhost:3000/todos/
+###
+
+GET http://localhost:3000/todos/1/
+###
+
+
+GET http://localhost:3000/agenda/?date=2021-03-30
+###
+
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+ "id": 5,
+ "todo": "Finalize event SEKHAR theme",
+ "priority": "HIGH",
+ "status": "TO DO",
+ "category": "HOME",
+ "dueDate": "2021-2-22"
+}
+
+
+###
+
+
+PUT http://localhost:3000/todos/1/
+Content-Type: application/json
+
+{
+"dueDate": "2021-3-30"
+}
+###
+
+DELETE http://localhost:3000/todos/6/
+###
